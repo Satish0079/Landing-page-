@@ -27,6 +27,26 @@
     rgba(239, 183, 192, 0.44) 91.2%
   );
 }
+.containerbody,
+.containerbody::after,
+.containerbody::before {
+  /* ... existing styles ... */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flip-card {
+  /* ... existing styles ... */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 
 .flip-card {
   position: relative;
