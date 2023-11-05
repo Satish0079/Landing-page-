@@ -8,11 +8,11 @@ function Timeline() {
           <h1 className="Timelineh1">The North Pole 2022</h1>
         </div>
         <p className="Timelinep">The ultimate arctic adventure</p>
-      </div>
+     
 
 <div class="timeline">
     <div class="container left-container">
-        <img src="Images/amazon.png" >
+        <img src="amazon.png" >
         <div class="text-box">
             <h2> Registration Starts</h2>
             <small>5<sup>th</sup> December 2023 </small>
@@ -23,7 +23,7 @@ function Timeline() {
     </div>
 
     <div class="container right-container">
-        <img src="Images/google.png" >
+        <img src="google.png" >
         <div class="text-box">
             <h2> Submission Deadline </h2>
             <small> 10<sup>th</sup> January 2023 </small>
@@ -34,7 +34,7 @@ function Timeline() {
     </div>
 
     <div class="container left-container">
-        <img src="Images/tesla.png" >
+        <img src="tesla.png" >
         <div class="text-box">
             <h2> Announcement of Shortlisted Teams </h2>
             <small> 12<sup>th</sup> January 2024</small>
@@ -47,7 +47,7 @@ function Timeline() {
    
 
     <div class="container right-container">
-        <img src="Images/flipkart.png" >
+        <img src="flipkart.png" >
         <div class="text-box">
             <h2> Grand Finale @TCET</h2>
             <small> 20<sup>th</sup> January 2024</small>
@@ -58,7 +58,7 @@ function Timeline() {
     </div>
 
     <div class="container left-container">
-        <img src="Images/toyota.png" >
+        <img src="toyota.png" >
         <div class="text-box">
             <h2> Announcement of Finalists </h2>
             <small> 21<sup>th</sup> January 2024</small>
@@ -68,6 +68,7 @@ function Timeline() {
         </div>
     </div>
 </div>
+   </div>
   );
 }
 
