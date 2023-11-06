@@ -1,5 +1,5 @@
-.AboutBody {
-  background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+body {
+  background-image: url('0.');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -11,32 +11,6 @@
   height: 100vh;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background-image: radial-gradient(
-    circle 311px at 8.6% 27.9%,
-    rgba(62, 147, 252, 0.57) 12.9%,
-    rgba(239, 183, 192, 0.44) 91.2%
-  );
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #f584ee; 
-}
-
 .typewriter-container {
   text-align: center;
   padding: 20px;
@@ -45,34 +19,82 @@
 .typewriter-title {
   font-size: 24px;
   font-weight: bold;
-  color: #007bff;
+  color: #15804;
+
 }
 
+
+
 .typewriter-box {
-  line-height: 30px;
   background-color: rgba(0, 0, 0, 0);
-  color: white;
-  backdrop-filter: blur(4px);
   padding: 40px;
-  border: 2px solid white;
+  border: 2px solid black;
   width: 500px;
   max-height: 500px;
   margin: 0 auto;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   position: relative;
   text-align: center;
-  border-radius: 20px;
   overflow-y: auto;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.typewriter-box::before,
+.typewriter-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, transparent, #FF00); 
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.typewriter-box:hover::before,
+.typewriter-box:hover::after {
+  opacity: 1;
+}
+
+
+.typewriter-box:hover::before {
+  border-color: #015854;
+}
+
+.typewriter-box:hover {
+  background-color: #FF0000;
+}
+
+.typewriter-box {
+  background: linear-gradient(45deg, #7eb5ff, #0b3d91);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.typewriter-box::before {
+  transition: border-color 0.3s ease;
+}
+
+.typewriter-box:hover::before {
+  border-color: #015854;
+}
+
+.typewriter-box:hover {
+  background: linear-gradient(45deg, #0b3d91, #15ff4a);
 }
 
 .typewriter-box p {
   margin: 0;
   font-size: 18px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:Roboto;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
   .typewriter-box {
-    width: 60%;
+    width: 90%;
   }
 }
